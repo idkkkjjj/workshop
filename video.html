@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Trailer - O Túmulo dos Vagalumes</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      background: black;
+      height: 100%;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <video id="videoPlayer" controls playsinline>
+    <source src="trailer.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo.
+  </video>
+
+  <script>
+    const video = document.getElementById('videoPlayer');
+
+    video.addEventListener('play', async () => {
+      // Tenta entrar em tela cheia
+      if (video.requestFullscreen) {
+        await video.requestFullscreen();
+      } else if (video.webkitRequestFullscreen) {
+        await video.webkitRequestFullscreen();
+      }
+
+      // Tenta travar a orientação em paisagem
+      if (screen.orientation && screen.orientation.lock) {
+        try {
+          await screen.orientation.lock('landscape');
+        } catch (err) {
+          console.warn("Não foi possível travar orientação:", err);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
