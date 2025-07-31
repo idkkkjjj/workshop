@@ -1,1 +1,1 @@
-# Um dos contos presentes no livro “Laços de Família”, de Clarice Lispector, acompanha a epifania da personagem Ana ao fugir de seus afazeres domésticos. Ela, que se via sentenciada a cuidar da casa e dos filhos, assemelha-se a muitas mulheres brasileiras, que exercem essas e outras tarefas diariamente, sem valorização e, até mesmo, sem remuneração. Nesse sentido, cabe analisar as causas socioeconômicas da invisibilidade do trabalho de cuidado no Brasil contemporâneo.
+# Workshop
